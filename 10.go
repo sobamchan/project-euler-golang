@@ -9,14 +9,11 @@ func main() {
 	i := 2
 	sum := 0
 
-	for {
+	for i < 2000000 {
 		if libs.IsPrime(i) {
 			sum += i
 		}
 		i++
-		if i > 2e+10 {
-			break
-		}
 	}
 
 	fmt.Printf("%d\n", sum)
